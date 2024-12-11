@@ -39,7 +39,7 @@ function SearchResults() {
       {searchedResults?.length > 0 ?
         searchedResults?.map((result, index) => result.overview ?
           <Card.Root maxW={300} key={index} overflow="hidden">
-            {result.backdrop_path ? <Image src={`https://image.tmdb.org/t/p/w500${result.backdrop_path}`} /> : <Image src={`https://via.placeholder.com/500x280?text=No+Image`} />}
+            {result.backdrop_path ? <Image src={`https://image.tmdb.org/t/p/w500${result.backdrop_path}`} /> : <Image src={`./500x280.png`} />}
             <Card.Body gap="2">
               <Card.Title>{result.title || result.name}</Card.Title>
               <Card.Description>
